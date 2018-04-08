@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black"
+    android:weightSum="1"
+    tools:context="io.guardianx.guardianx_android.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="191dp"
+            android:layout_height="121dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            style="@style/login_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password length must be at least \n                    8 characters"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            style="@style/login_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your email and create a password"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            style="@style/login_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Email will be your username"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username_edit_text"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/text_white" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="@string/hint_password"
+            android:textColorHint="@color/text_white" />
+
+        <Button
+            android:id="@+id/continue_button"
+            style="@style/button"
+            android:layout_margin="20dp"
+            android:text="Continue"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+</RelativeLayout>
+
